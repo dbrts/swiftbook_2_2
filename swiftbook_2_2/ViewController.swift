@@ -25,9 +25,9 @@ class ViewController: UIViewController {
         actionButton.setTitle("START", for: .normal)
         setTrafficLight(for: .off)
         
-        redLightView.layer.cornerRadius = 64
-        yellowLightView.layer.cornerRadius = 64
-        greenLightView.layer.cornerRadius = 64
+        redLightView.layer.cornerRadius = redLightView.frame.width / 2
+        yellowLightView.layer.cornerRadius = yellowLightView.frame.width / 2
+        greenLightView.layer.cornerRadius = greenLightView.frame.width / 2
         
         actionButton.layer.cornerRadius = 5
     }
