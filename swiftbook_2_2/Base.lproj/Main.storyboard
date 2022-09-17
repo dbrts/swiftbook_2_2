@@ -19,9 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EP3-2P-4XP" userLabel="actionButton">
-                                <rect key="frame" x="137" y="711" width="140" height="44"/>
+                                <rect key="frame" x="137" y="707" width="140" height="48"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="e3k-0W-ik7"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="xsv-ei-yi7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
