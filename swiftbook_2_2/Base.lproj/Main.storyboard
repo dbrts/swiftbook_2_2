@@ -33,15 +33,15 @@
                             <stackView opaque="NO" contentMode="redraw" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="zfI-KQ-tc4">
                                 <rect key="frame" x="143" y="128" width="128" height="434"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYY-fU-sSK" userLabel="redView">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYY-fU-sSK" userLabel="redView">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUG-ag-65j" userLabel="yellowView">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUG-ag-65j" userLabel="yellowView">
                                         <rect key="frame" x="0.0" y="153" width="128" height="128"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5o-8Q-oFo" userLabel="greenView">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5o-8Q-oFo" userLabel="greenView">
                                         <rect key="frame" x="0.0" y="306" width="128" height="128"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
@@ -57,6 +57,12 @@
                             <constraint firstItem="EP3-2P-4XP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zZ9-8q-VC1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="actionButton" destination="EP3-2P-4XP" id="8zl-rc-ibE"/>
+                        <outlet property="greenLightView" destination="T5o-8Q-oFo" id="qln-wd-Trg"/>
+                        <outlet property="redLightView" destination="aYY-fU-sSK" id="cb0-XT-Jw8"/>
+                        <outlet property="yellowLightView" destination="LUG-ag-65j" id="XIk-XQ-w7s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
