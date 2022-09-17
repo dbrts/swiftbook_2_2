@@ -30,7 +30,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="g3k-LX-LXL" userLabel="TrafficLightStackView">
+                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="g3k-LX-LXL" userLabel="TrafficLightStackView">
                                 <rect key="frame" x="143" y="121" width="128" height="416"/>
                                 <subviews>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6Y-pR-UrW" userLabel="redView">
@@ -48,6 +48,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="416" id="BFc-GJ-5Nr"/>
+                                    <constraint firstAttribute="width" constant="128" id="saM-Yq-KEh"/>
                                 </constraints>
                             </stackView>
                         </subviews>
