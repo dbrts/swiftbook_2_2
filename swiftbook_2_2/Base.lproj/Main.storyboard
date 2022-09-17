@@ -19,16 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EP3-2P-4XP" userLabel="actionButton">
-                                <rect key="frame" x="163" y="725" width="88" height="30"/>
+                                <rect key="frame" x="137" y="711" width="140" height="44"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="xsv-ei-yi7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="xsv-ei-yi7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickedButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="117-A1-N5U"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="g3k-LX-LXL" userLabel="TrafficLightStackView">
                                 <rect key="frame" x="143" y="121" width="128" height="416"/>
@@ -61,6 +64,12 @@
                             <constraint firstItem="EP3-2P-4XP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zZ9-8q-VC1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="actionButton" destination="EP3-2P-4XP" id="n9y-bw-3z9"/>
+                        <outlet property="greenLightView" destination="mCW-d6-oeD" id="z3J-oc-C2X"/>
+                        <outlet property="redLightView" destination="j6Y-pR-UrW" id="UR1-Fu-Pes"/>
+                        <outlet property="yellowLightView" destination="vmc-W1-xDO" id="jHq-oi-eVS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
