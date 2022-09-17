@@ -8,10 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet var redLightView: UIView!
+    @IBOutlet var yellowLightView: UIView!
+    @IBOutlet var greenLightView: UIView!
+    @IBOutlet var actionButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
     }
 
 
