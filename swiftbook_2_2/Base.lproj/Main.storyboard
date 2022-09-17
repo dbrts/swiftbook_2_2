@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swiftbook_2_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EP3-2P-4XP" userLabel="actionButton">
-                                <rect key="frame" x="137" y="707" width="140" height="48"/>
+                                <rect key="frame" x="145" y="754" width="140" height="48"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="e3k-0W-ik7"/>
@@ -35,24 +35,23 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="g3k-LX-LXL" userLabel="TrafficLightStackView">
-                                <rect key="frame" x="143" y="121" width="128" height="416"/>
+                                <rect key="frame" x="140" y="139" width="150" height="487"/>
                                 <subviews>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6Y-pR-UrW" userLabel="redView">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="151.66666666666666"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmc-W1-xDO" userLabel="yellowView">
-                                        <rect key="frame" x="0.0" y="144" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="167.66666666666669" width="150" height="151.66666666666669"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCW-d6-oeD" userLabel="greenView">
-                                        <rect key="frame" x="0.0" y="288" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="335.33333333333331" width="150" height="151.66666666666669"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="416" id="BFc-GJ-5Nr"/>
-                                    <constraint firstAttribute="width" constant="128" id="saM-Yq-KEh"/>
+                                    <constraint firstAttribute="width" secondItem="g3k-LX-LXL" secondAttribute="height" multiplier="128:416" id="QHT-QB-Sbb"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -60,8 +59,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="g3k-LX-LXL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ACd-MP-mfM"/>
-                            <constraint firstItem="g3k-LX-LXL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="AJk-vt-VaH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EP3-2P-4XP" secondAttribute="bottom" constant="107" id="KO5-Mc-LXG"/>
+                            <constraint firstItem="g3k-LX-LXL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="AJk-vt-VaH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EP3-2P-4XP" secondAttribute="bottom" constant="96" id="KO5-Mc-LXG"/>
+                            <constraint firstItem="EP3-2P-4XP" firstAttribute="top" secondItem="g3k-LX-LXL" secondAttribute="bottom" constant="128" id="pJa-gE-qKx"/>
                             <constraint firstItem="EP3-2P-4XP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zZ9-8q-VC1"/>
                         </constraints>
                     </view>
