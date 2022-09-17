@@ -30,39 +30,36 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <stackView opaque="NO" contentMode="redraw" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="zfI-KQ-tc4">
-                                <rect key="frame" x="143" y="128" width="128" height="434"/>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="g3k-LX-LXL">
+                                <rect key="frame" x="143" y="121" width="128" height="416"/>
                                 <subviews>
-                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYY-fU-sSK" userLabel="redView">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6Y-pR-UrW" userLabel="redView">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
-                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUG-ag-65j" userLabel="yellowView">
-                                        <rect key="frame" x="0.0" y="153" width="128" height="128"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmc-W1-xDO" userLabel="yellowView">
+                                        <rect key="frame" x="0.0" y="144" width="128" height="128"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
-                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5o-8Q-oFo" userLabel="greenView">
-                                        <rect key="frame" x="0.0" y="306" width="128" height="128"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCW-d6-oeD" userLabel="greenView">
+                                        <rect key="frame" x="0.0" y="288" width="128" height="128"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="416" id="BFc-GJ-5Nr"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="g3k-LX-LXL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ACd-MP-mfM"/>
+                            <constraint firstItem="g3k-LX-LXL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="AJk-vt-VaH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EP3-2P-4XP" secondAttribute="bottom" constant="107" id="KO5-Mc-LXG"/>
-                            <constraint firstItem="zfI-KQ-tc4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="UCA-qm-dsx"/>
-                            <constraint firstItem="zfI-KQ-tc4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cjQ-dI-h4M"/>
                             <constraint firstItem="EP3-2P-4XP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zZ9-8q-VC1"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="actionButton" destination="EP3-2P-4XP" id="8zl-rc-ibE"/>
-                        <outlet property="greenLightView" destination="T5o-8Q-oFo" id="qln-wd-Trg"/>
-                        <outlet property="redLightView" destination="aYY-fU-sSK" id="cb0-XT-Jw8"/>
-                        <outlet property="yellowLightView" destination="LUG-ag-65j" id="XIk-XQ-w7s"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
